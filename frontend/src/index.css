@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #3b82f6;
+  --color-brand-hover: #2563eb;
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-surface-hover: #334155;
+  --color-border: #334155;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  
+  --color-bullish: #22c55e;
+  --color-bearish: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased overflow-hidden selection:bg-brand selection:text-white;
+  }
+}
